@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
       <Fade in timeout={1000}>
-        <Typography onClick={() => setOpen(true)} variant='h1' color='textPrimary'>
+        <Typography style={{cursor: "pointer"}} onClick={() => setOpen(true)} variant='h1' color='textPrimary'>
           <Animated>{title}</Animated>
         </Typography>
       </Fade>

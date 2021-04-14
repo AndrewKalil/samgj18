@@ -23,7 +23,7 @@ const Modal = ({ classes, children, fullScreen, setOpen, ...rest }: Props) => (
           fullScreen ? classes.fullScreenContainer : classes.centeredContainer
         }>
         <div className={classes.content}>
-          <FaWindowClose onClick = {() => setOpen()}/>
+          <FaWindowClose className={classes.closeBtn} onClick = {() => setOpen()}/>
           <Scrollbars
             autoHide
             autoHideTimeout={1000}
